@@ -5,6 +5,7 @@
 *.out
 *.synctec.gz
 *.pdf
+*.synctex.gz
 secret/secret.tex
 template.*
 me.jpeg
