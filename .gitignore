@@ -3,4 +3,7 @@
 *.fls
 *.log
 *.out
-content/secret.tex
+*.synctec.gz
+*.pdf
+secret/secret.tex
+template.*
