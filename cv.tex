@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+\newcommand{\birthdate}{01 January 1971}
+\newcommand{\phonenumber}{+49 1234 5678}
+\newcommand{\mailaddress}{test@test.com}
+% overwrite commands above with non public info
+\IfFileExists{secret/secret.tex}{\input{secret/secret.tex}}{}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{me.jpeg} % Profile picture
+
+\cvname{Christian Raue} % Your name
+\cvjobtitle{Software Engineer} % Job title/career
+
+\cvdate{\birthdate} % Date of birth
+\cvaddress{Berlin, Germany} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{\phonenumber} % Phone number
+\cvsite{https://www.linkedin.com/in/\newline christian-raue-35591a196/} % Personal website
+\cvmail{\mailaddress} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+% TODO
+\aboutme{TODO: About me} % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% TODO
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Teaching/4},{Vue/1.5},{Javascript/2},{R/2.5},{GLSL/3.5},{Smalltalk (Programming Language)/2.5},{C/3.5},{Python/5.5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+% TODO
+\section{Interests}
+
+TODO: Interests
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+	\twentyitem{since 2023}{M.Sc. IT Systems Engineering}{Hasso-Plattner-Institute}{Potsdam}
+	\twentyitem{2019 - 2023}{B.Sc. IT Systems Engineering}{Hasso-Plattner-Institute}{Potsdam}
+	\twentyitem{2017 - 2019}{M.Sc. Biotechnology}{Berlin University of Applied Sciences}{Berlin}
+	\twentyitem{2013 - 2017}{B.Sc. Biotechnology}{Berlin University of Applied Sciences}{Berlin}
+	\twentyitem{2007 - 2013}{High School}{Max-Steenbeck-Gymnasium}{Cottbus}
+
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	%\twentyitemshort{<dates>}{<title/description>}
+	\twentyitemshort{2023}{Entwurf und Implementierung von regelmäßigen, randomisierten und bedarfsorientierten Abfahrtsplänen für Züge in einer Verkehrssimulation [HPI, DB Systel GmbH]}
+	\twentyitemshort{2019}{Neue Ansätze und Weiterentwicklung für den Nachweis von Phosphorylierungen mit Multiplex Immunoassays auf der Luminex-Plattform [BHT, FH IZI-BB]}
+	\twentyitemshort{2019}{Sind Ihre Daten normalverteilt? [BIOspektrum 25, 159-161 (2019)]}
+	\twentyitemshort{2017}{Biochemische und biophysikalische Untersuchungen zum molekularen Aufbau und zur Funktion von Thylakoidmembran-Proteinkomplexen von Acaryochloris marina [BHT]}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 LICENSES & CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Licenses \& Certifications}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	%\twentyitemshort{<dates>}{<title/description>}
+	\twentyitemshort{2022}{Introduction to Quantum Computing - Part 2 [openHPI]}
+	\twentyitemshort{2022}{Introduction to Quantum Computing - Part 1 [openHPI]}
+	\twentyitemshort{2020}{Mastering Design Thinking in Organizsations [openHPI]}
+	\twentyitemshort{2016}{Certified Laser Safety Officer [Laserworld AG]}
+	\twentyitemshort{2015}{Practitioner for applied communication techniques and change models}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	%\twentyitem{<dates>}{<title>}{<location>}
+	\twentyitem{since 2019}{Python Developer}{German Federal Statistical Office}{}
+	\twentyitem{2018 - 2019}{Undergraduate Research Assistant}{Fraunhofer IZI-BB}{}
+	\twentyitem{2018 - 2019}{Freelance Lecturer/Instructor}{CQ Beratung+Bildung GmbH}{}
+	\twentyitem{2016 - 2018}{Undergraduate Teaching Assistant}{Berlin University of Applied Sciences}{}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+% TODO
+\section{Other information}
+
+\subsection{Review}
+
+Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
